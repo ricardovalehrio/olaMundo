@@ -29,7 +29,7 @@
         printf("Número com sinal: %d\n", numeroSinal);
         printf("Número sem sinal: %u\n", numeroSemSinal);
 
-        
+
         int numeroNormal = 2147483647; // Limite máximo para int com sinal
         long int numeroGrande = 2147483647; // Correto, pois long
 
@@ -37,9 +37,13 @@
         printf("Número grande (long int): %ld\n", numeroGrande);
 
         numeroGrande = 2147483648; // valor maior que o limite de int
-        printf("Número grande atualizado (long int): %ld\n", numeroGrande);
+        printf("Número grande atualizado (long long int): %lld\n", numeroGrande);
 
-
+        printf("Tamanho de int: %zu bytes\n", sizeof(int));
+        printf("Tamanho de long int: %zu bytes\n", sizeof(long int));
+        printf("Tamanho de long long int: %zu bytes\n", sizeof(long long int));
+        printf("Tamanho de double: %zu bytes\n", sizeof(double));
+        printf("Tamanho de long double: %zu bytes\n", sizeof(long double));
 
         return 0;
     }
