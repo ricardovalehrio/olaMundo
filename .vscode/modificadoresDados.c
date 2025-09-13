@@ -45,6 +45,13 @@
         printf("Tamanho de double: %zu bytes\n", sizeof(double));
         printf("Tamanho de long double: %zu bytes\n", sizeof(long double));
 
+        double numeroPreciso = 3.14159265358979323846; // double padrão
+        long double numeroMuitoPreciso = 3.141592653589793238463L; // long double para maior precisão
+
+        printf("Número preciso (double): %.15f\n", numeroPreciso);
+        printf("Número muito preciso (long double): %.21Lf\n", numeroMuitoPreciso);
+        
+
         return 0;
     }
         
