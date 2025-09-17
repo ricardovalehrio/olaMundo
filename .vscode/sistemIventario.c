@@ -18,24 +18,25 @@ unsigned int estoqueMinimoB = 2500;
 double valorTotalA = estoqueA * valorA;
 double valorTotalB = estoqueB * valorB; 
 
+int resultadoA, resultadoB;
+
+
 //Exibir as informações dos produtos
-printf("Produto %s tem estoque %u e o seu valor unitário é de: %.2f\n", produtoA, estoqueA, valorA);
-printf("Produto %s tem estoque %u e o seu valor unitário é de: %.2f\n", produtoB, estoqueB, valorB);
+printf("Produto %s tem estoque %u e o seu valor unitário é de: R$%.2f\n", produtoA, estoqueA, valorA);
+printf("Produto %s tem estoque %u e o seu valor unitário é de: R$%.2f\n", produtoB, estoqueB, valorB);
 
 // Comparações com o valor minimo de estoque
 
+resultadoA = estoqueA > estoqueMinimoA;
+resultadoB = estoqueB > estoqueMinimoB;
+
+printf("O produto %s tem estoque mínimo %d\n", produtoA, resultadoA);
+printf("O produto %s tem estoque mínimo %d\n", produtoB, resultadoB);
 
 //Comparações entre os valores totais dos produtos
 
-
-
-
-
-
-
-
-
-
+printf(" O valor total de A (R$ %.2f) é maior que o valor total de B (R$ %.2f)? %d\n", (estoqueA * valorA), (estoqueB * valorB),
+    (estoqueA * valorA) > (estoqueB * valorB));
 
 
 
