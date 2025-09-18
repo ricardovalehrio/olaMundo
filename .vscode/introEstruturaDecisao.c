@@ -90,5 +90,26 @@ if (temperatura > 30.0) {
     printf("Está agradável!\n");
 }
 
+
+int numero;
+
+printf("Digite um número inteiro: \n");
+scanf("%d", &numero);
+
+if (numero % 2 == 0) {
+    printf("O número é par.\n");
+} else {
+    printf("O número é ímpar.\n");
+}
+
+int estoque;
+
+printf("Digite a quantidade em estoque: \n");
+scanf("%d", &estoque);
+
+if (estoque < 5) {
+    printf("Estoque baixo.\n");
+}
+
 return 0;
 }
