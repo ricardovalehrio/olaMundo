@@ -36,17 +36,16 @@ int main() {
         break;
     }
 
-    printf("A escolha do computador foi: ");
     switch (escolhaComputador)
     {
     case 1:
-        printf("Pedra.\n");
+        printf("Computador escolheu Pedra.\n");
         break;
     case 2:
-        printf("Papel.\n");
+        printf("Computador escolheu Papel.\n");
         break;
     case 3:
-        printf("Tesoura.\n");
+        printf("Computador escolheu Tesoura.\n");
         break;
     }
 
