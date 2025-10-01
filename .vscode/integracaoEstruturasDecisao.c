@@ -34,12 +34,12 @@ switch(opcao) {
 
         printf("Determinar Status\n");
         printf("Digite a média: ");
-        scanf("%.2f", &media);
+        scanf("%f", &media);
         //Usando operador ternário para determinar se o aluno está aprovado ou reprovado
         //media >= 5 ? printf("Aprovado!\n") : printf("Reprovado!\n");
         if (media >= 7) {
         printf("Aprovado!\n");
-        } else if (media >= 5) {
+        } else if (media >= 5 && media < 7) {
         printf("Recuperação!\n");
         } else {
         printf("Reprovado!\n");
